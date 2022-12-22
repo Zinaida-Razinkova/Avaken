@@ -1,0 +1,36 @@
+.about__content {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}
+
+.about__content-block {
+  @media screen and (min-width: $desktop) {
+    max-width: 497px;
+  }
+}
+
+.about__content-paragraf {
+  color: $color_medium;
+  margin-bottom: 35px;
+}
+
+.content__subparagraf--link {
+  color: $color_dark;
+
+  &:hover {
+    color: $color_accent;
+  }
+}
+
+.about-content__svg {
+  display: flex;
+  margin: 10px 0px 0px 0px;
+
+  @media screen and (max-width: $mobile) {
+    margin: 16px 0px 0px 0px;
+  }
+}

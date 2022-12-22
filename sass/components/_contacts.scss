@@ -1,0 +1,128 @@
+.contacts {
+  @media screen and (min-width: $desktop) {
+    padding: 58px 0px 72px 0px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 24px 0px 32px 0px;
+  }
+}
+
+.contacts__container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
+}
+
+.contacts__block {
+  background-color: $color_dark;
+
+  @media screen and (min-width: $desktop) {
+    flex: 0 0 50%;
+    width: 100%;
+  }
+}
+
+.contacts__form {
+  padding: 44px;
+
+  @media screen and (max-width: $mobile) {
+    padding: 20px;
+  }
+}
+
+.contacts__form-title {
+  font-family: $font_basic;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.3;
+  color: $color_white;
+  margin: 0px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 20px;
+    padding-top: 23px;
+  }
+}
+
+.contacts__form-paragraf {
+  color: $color_more_light;
+  margin: 16px 0px 24px 0px;
+
+  @media screen and (max-width: $mobile) {
+    margin: 8px 0px 20px 0px;
+  }
+}
+
+.contacts__form-block {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.contacts__form-label {
+  display: block;
+  font-family: $font_basic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $color_white;
+}
+
+.contacts__form-input_name,
+.contacts__form-input_phone,
+.contacts__form-input_email,
+.contacts__form-input_message {
+  width: 100%;
+  font-family: $font_basic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $color_white;
+  background: $color_input;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid $color_accent;
+}
+
+.contacts__form-input_name,
+.contacts__form-input_phone,
+.contacts__form-input_email {
+  min-height: 47px;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts__form-input_name,
+.contacts__form-input_phone {
+  @media screen and (min-width: $desktop) {
+    min-width: 300px;
+  }
+}
+
+.block-form {
+  margin-right: 30px;
+}
+
+.contacts__form-input_message {
+  min-height: 118px;
+  margin-bottom: 19px;
+}
+
+.contacts__button {
+  min-width: 188px;
+
+  @media screen and (max-width: $mobile) {
+    min-width: 153px;
+  }
+}
+
+.contacts__form-button_iconarrow {
+  fill: $color_white;
+}

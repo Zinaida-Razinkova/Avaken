@@ -1,0 +1,129 @@
+.hero {
+  padding-top: 40px;
+
+  @media screen and (max-width: $mobile) {
+    padding-top: 15px;
+  }
+}
+
+.hero__container {
+  display: flex;
+
+  @media screen and (max-width: 425.98px) {
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 426px) {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero__content {
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+}
+
+.hero__img {
+  position: relative;
+  text-align: left;
+}
+
+.hero__box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #f8f8f8;
+  width: 169px;
+  height: 70px;
+  border: 2px solid $color_dark;
+
+  @media screen and (max-width: $mobile) {
+    width: 109px;
+    height: 50px;
+  }
+}
+
+.hero__box::before {
+  content: "";
+  position: absolute;
+  bottom: 32px;
+  right: 52px;
+  z-index: 2;
+  width: 54px;
+  height: 1px;
+  background-color: $color_dark;
+  transform: rotate(-90deg);
+
+  @media screen and (max-width: $mobile) {
+    bottom: 24px;
+    right: 38px;
+    width: 34px;
+  }
+}
+
+.hero__title {
+  font-family: $font_basic;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 1.09;
+  color: $color_dark;
+  max-width: 556px;
+  margin-bottom: 55px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+}
+
+.hero__button {
+  min-width: 167px;
+
+  @media screen and (max-width: $mobile) {
+    min-width: 133px;
+  }
+}
+
+.hero__button-iconarrow {
+  fill: $color_white;
+}
+
+.swiper {
+  max-width: 598px;
+
+  @media screen and (max-width: $mobile) {
+    max-width: 188px;
+  }
+}
+
+.hero__button-prev {
+  font-size: 20px;
+
+  &:hover {
+    color: $color_accent;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 14px;
+  }
+}
+
+.hero__button-next {
+  font-size: 20px;
+
+  &:hover {
+    color: $color_accent;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 14px;
+  }
+}

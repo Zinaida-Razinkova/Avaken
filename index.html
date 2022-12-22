@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaken</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.7.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo" href="#">
+                <svg class="header__logo-svg" aria-label="logo">
+                    <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <nav class="header__menu" data-menu>
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Home</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">About</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Services</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">News</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <button class="header__button" aria-expanded="false" type="button" data-button>
+                <svg width="22" height="22" aria-label="Mobile menu">
+                    <use class="header__button-close" href="./images/sprite.svg#icon-header-close"></use>
+                    <use class="header__button-open" href="./images/sprite.svg#icon-header-burger"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="backdrop"></div>
+    <main>
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__img swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="hero__img-desktop" srcset="./images/hero@2x.jpg 2x" src="./images/hero.jpg"
+                                alt="Hero images" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="hero__img-desktop" src="./images/hero1.jpg" alt="Hero images" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="hero__img-desktop" src="./images/hero2.jpg" alt="Hero images" />
+                        </div>
+                    </div>
+                    <div class="hero__box">
+                        <i class="hero__button-prev iconarrow fas fa-arrow-left"></i>
+                        <i class="hero__button-next iconarrow fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="hero__content">
+                    <h1 class="hero__title">Let’s build something great!</h1>
+                    <button class="hero__button button" type="button">
+                        Learn More
+                        <i class="hero__button-iconarrow iconarrow fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__container container">
+                <p class="services__title text">Services</p>
+                <div class="services__content">
+                    <h2 class="services__content-title content-title">
+                        Full-service digital capabilities from end to end.
+                    </h2>
+                    <div class="services__content-block block-content">
+                        <a href="#" class="block-content_link">See all services
+                            <i class="iconarrow fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="services__block">
+                    <div class="services__item">
+                        <p class="services__item-title">Experiences</p>
+                        <h3 class="services__item-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius.
+                        </h3>
+                        <p class="services__item-paragraf content-paragraf">
+                            Molestie facilisis sit nisl imperdiet nunc, enim sed a. Mi ac ut arcu sollicitudin
+                            pellentesque.
+                        </p>
+                        <a href="" class="services__link ">
+                            <i class="services__link-iconplus fas fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="services__item">
+                        <p class="services__item-title">Campaigns</p>
+                        <h3 class="services__item-subtitle">
+                            Cras sit cras eget interdum. Suspendisse nibh mattis non fames sit.
+                        </h3>
+                        <p class="services__item-paragraf content-paragraf">
+                            Erat in ut nunc, morbi dictumst et lectus ligula enim. Porta porta nibh purus ac sit morbi
+                            et.
+                        </p>
+                        <a href="" class="services__link ">
+                            <i class="services__link-iconplus fas fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="services__item">
+                        <p class="services__item-title">Studio</p>
+                        <h3 class="services__item-subtitle">
+                            Mattis amet tincidunt sem morbi lacus blandit donec arcu dolor.
+                        </h3>
+                        <p class="services__item-paragraf content-paragraf">
+                            Bibendum molestie tellus maecenas eget. Risus aenean vestibulum id porttitor mattis.
+                        </p>
+                        <a href="" class="services__link ">
+                            <i class="services__link-iconplus fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about-container container">
+                <p class="about__title text">About us</p>
+                <div class="about__content">
+                    <h2 class="about__content-title content-title">
+                        Sit bibendum id proin felis auctor erat ac.
+                    </h2>
+                    <div class="about__content-block block-content">
+                        <h3 class="about__content-paragraf content-paragraf">
+                            Aliquam egestas hac morbi eu. Eros, elit est diam mattis laoreet faucibus lectus. Cursus
+                            sed tellus augue morbi pulvinar. Consequat nisi, integer potenti consectetur. Sed leo
+                            massa morbi iaculis viverra.
+                        </h3>
+                        <a href="#" class="block-content_link">read more
+                            <i class="iconarrow fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="contacts__container container">
+                <div class="contacts__img">
+                    <img class="contacts__img" srcset="./images/contacts@2x.jpg 2x" src="./images/contacts.jpg"
+                        alt="Contacts" />
+                </div>
+                <div class="contacts__block">
+                    <form class="contacts__form">
+                        <h2 class="contacts__form-title">Write Me.</h2>
+                        <h3 class="contacts__form-paragraf content-paragraf">
+                            Sit et vulputate posuere id diam ac eget lacinia enim. Id congue sapien libero sed.
+                            Aliquet amet eget placerat facilisis leo, sit consequat.
+                        </h3>
+                        <div class="contacts__form-block ">
+                            <div class="block-form">
+                                <label class="contacts__form-label">Full Name</label>
+                                <input class="contacts__form-input_name" type="text" name="name"
+                                    pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                                    title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc required" />
+                            </div>
+                            <div class="block-form">
+                                <label class="contacts__form-label">Phone</label>
+                                <input class="contacts__form-input_phone" type="tel" name="tel"
+                                    pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
+                                    title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="block-form">
+                            <label class="contacts__form-label">Email Address</label>
+                            <input class="contacts__form-input_email" type="text" name="email" title="Enter your email "
+                                required />
+                        </div>
+                        <div class="block-form">
+                            <label class="contacts__form-label">Message</label>
+                            <input class="contacts__form-input_message" type="text" name="text" />
+                        </div>
+                        <button type="button" class="contacts__button button">
+                            Send message
+                            <i class="contacts__form-button_iconarrow iconarrow fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/sticky-header.js"></script>
+    <script src="./js/burger-menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="https://kit.fontawesome.com/1c97b3b3e8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
